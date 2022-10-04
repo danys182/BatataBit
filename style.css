@@ -4,7 +4,8 @@
   --color-secundary: #1a9af7;
   --color-secundary-soft: #e7f5ff;
   --color-dark: #201e1c;
-  --color-dark-light: #282623;
+  --color-dark-10: #282623;
+  --color-dark-20: #757575;
   --color-light: #ffffff;
   --color-light-10: #faf8f7;
   --color-light-20: #bababa;
@@ -18,13 +19,37 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  background-color: var(--color-light-10);
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+.title {
+    line-height: 2.6rem;
+    font-size: 2.4rem;
+    color: var(--color-dark);
+}
+
+.description {
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin: 24px 0 0;
+    color: var(--color-dark-20);
 }
 
 header {
-  width: 100%;
-  text-align: center;
-  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
-}
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+  }
 
 header img {
   width: 15rem;
@@ -32,23 +57,12 @@ header img {
   margin-top: 60px;
 }
 
-.header--container-title {
-  width: 85%;
-  margin: 45px auto;
-}
 
-.header--container-title h1 {
-  font-weight: bold;
-  font-size: 2.4rem;
-  line-height: 2.6rem;
+header .container h1 {
   color: var(--color-light);
 }
 
-.header--container-title p {
-  margin: 20px 0 0;
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+header .container p {
   color: var(--color-primary-soft);
 }
 
@@ -73,4 +87,20 @@ header .header--button span {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./assets/icons/arrow_down.svg");
+}
+
+
+
+.bgBitcoin {
+    margin: 60px auto;
+    height:200px;
+    width:200px;
+    background-image: url("./assets/images/bitcoin.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    width:100%;
 }
