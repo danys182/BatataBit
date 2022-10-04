@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #f7931a;
+  --color-primary-soft: #ffe9d5;
+  --color-secundary: #1a9af7;
+  --color-secundary-soft: #e7f5ff;
+  --color-dark: #201e1c;
+  --color-dark-light: #282623;
+  --color-light: #ffffff;
+  --color-light-10: #faf8f7;
+  --color-light-20: #bababa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+  width: 15rem;
+  height: 2.4rem;
+  margin-top: 60px;
+}
+
+.header--container-title {
+  width: 85%;
+  margin: 45px auto;
+}
+
+.header--container-title h1 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--color-light);
+}
+
+.header--container-title p {
+  margin: 20px 0 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--color-primary-soft);
+}
+
+header .header--button {
+  display: inline-block;
+  transform: translateY(50%);
+  background-color: var(--color-light-10);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 4px;
+  padding: 18px;
+  color: var(--color-dark);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .header--button span {
+  display: inline-block;
+  width: 1.3rem;
+  height: 0.8rem;
+  margin-left: 0.8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/icons/arrow_down.svg");
+}
