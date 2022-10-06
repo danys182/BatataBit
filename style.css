@@ -28,7 +28,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 20px 5% 60px;
   text-align: center;
   line-height: 1.6rem;
   min-width: 320px;
@@ -37,6 +37,7 @@ body {
 
 h1.title,
 h2.title {
+  margin: 40px 0 24px;
   line-height: 2.6rem;
   font-size: 2.4rem;
   color: var(--color-dark);
@@ -47,22 +48,27 @@ h3.title {
   font-size: 1.8rem;
 }
 
-.description {
+p {
   font-weight: 500;
   line-height: 1.8rem;
-  margin: 24px 0 0;
+  margin: 24px 0 10px;
   color: var(--color-dark-20);
 }
 
 header {
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
   min-width: 320px;
+  margin-bottom: 50px;
+}
+
+header .container {
+    padding-top: 50px;
+    padding-bottom: 0;
 }
 
 header img {
     width: 151px;
     height: 24px;
-    margin: 60px 0 50px;
 }
 
 header .container h1 {
@@ -71,6 +77,7 @@ header .container h1 {
 
 header .container p {
   color: var(--color-primary-soft);
+  margin-bottom: 24px;
 }
 
 header .header--button {
@@ -97,7 +104,7 @@ header .header--button span {
 }
 
 .bgBitcoin {
-  margin: 6rem auto;
+  margin: 0 auto;
   height: 20rem;
   width: 20rem;
   background-image: url("./assets/images/bitcoin.svg");
@@ -125,18 +132,20 @@ header .header--button span {
 
 .trending-prev, .trending-next {
     cursor: pointer;
+    margin: 0 10px;
 }
 
 .trending-container {
   margin-top: 40px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .grid-container {
   text-align: left;
+  width: 320px;
 }
 
 .grid-container .title {
@@ -194,4 +203,53 @@ header .header--button span {
     font-size: 1.2rem;
     width: fit-content;
     margin: 16px auto
+}
+
+
+.container.benefits{
+    background-color: var(--color-dark);
+}
+
+
+.container.benefits h2, .container.benefits h3 {
+    color: var(--color-light);
+}
+
+.container.benefits .section{
+    text-align: left;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: var(--color-dark-10);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.container.benefits p {
+    margin: 24px 0 30px;
+}
+
+.container.benefits .section span {
+    width:24px;
+    height:24px;
+    margin-bottom: 10px;
+    display:block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container.benefits .clock {
+    background-image: url("./assets/icons/clock.svg");
+}
+
+.container.benefits .eye {
+    background-image: url("./assets/icons/eye.svg");
+}
+
+.container.benefits .dollar {
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+
+.container.benefits .check {
+    background-image: url("./assets/icons/check-circle.svg");
 }
