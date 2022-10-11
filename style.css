@@ -19,11 +19,13 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  min-width: 280px;
 }
 
 body {
   font-size: 1.4rem;
   background-color: var(--color-light-10);
+  
 }
 
 .container {
@@ -31,7 +33,6 @@ body {
   padding: 20px 5% 60px;
   text-align: center;
   line-height: 1.6rem;
-  min-width: 320px;
   max-width: 900px;
 }
 
@@ -57,7 +58,6 @@ p {
 
 header {
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
-  min-width: 320px;
   margin-bottom: 50px;
 }
 
@@ -252,4 +252,16 @@ header .header--button span {
 
 .container.benefits .check {
     background-image: url("./assets/icons/check-circle.svg");
+}
+
+.batata-logo {
+  width:40px;
+
+  margin: 0 auto;
+  height:24px;
+  transform: translateY(50%);
+  margin: 0 auto;
+  background-image: url("./assets/icons/batata.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
 }
