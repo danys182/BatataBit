@@ -281,7 +281,7 @@ header .header--button span {
 .container.plans .cards {
   display: flex;
   gap: 8px;
-  overflow-x: scroll;
+  overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   padding: 10px 5px;
