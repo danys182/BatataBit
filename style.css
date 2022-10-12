@@ -29,7 +29,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 20px 5% 60px;
+  padding: 20px 20px 60px 20px;
   text-align: center;
   max-width: 900px;
 }
@@ -204,6 +204,14 @@ header .header--button span {
 
 .container.benefits {
   background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.container.benefits .benefits-title {
+  width: 100%;
 }
 
 .container.benefits h2,
@@ -215,7 +223,6 @@ header .header--button span {
 .container.benefits .section {
   text-align: left;
   padding: 16px;
-  margin-bottom: 16px;
   background-color: var(--color-dark-10);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
@@ -253,7 +260,6 @@ header .header--button span {
 
 .batata-logo {
   width: 40px;
-
   margin: 0 auto;
   height: 24px;
   transform: translateY(50%);
@@ -274,20 +280,20 @@ header .header--button span {
 
 .container.plans .cards {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   overflow-x: scroll;
-  overscroll-behavior-x:contain;
+  overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  padding: 10px 0;
+  padding: 10px 5px;
 }
 
 .container.plans article {
-  position:relative;
+  position: relative;
   background-color: var(--color-light);
   scroll-snap-align: center;
   margin: 20px auto 0;
-  min-width: 230px;
-  max-width: 300px;
+  min-width: 180px;
+  max-width: 280px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 8px;
   width: 190px;
@@ -308,9 +314,8 @@ header .header--button span {
   border-radius: 8px;
   font-weight: 700;
   display: inline-block;
-  position:absolute;
+  position: absolute;
   transform: translate(-50%, -50%);
-
 }
 
 .container.plans .price {
@@ -332,23 +337,61 @@ header .header--button span {
 }
 
 .container.plans a {
-  border: 2px solid #F7931A;
+  border: 2px solid #f7931a;
   background: var(--color-light-10);
   padding: 10px 16px;
   border-radius: 4px;
-  display:inline-block;
-  font-size:1.4rem;
-  color:var(--color-dark);
+  display: inline-block;
+  font-size: 1.4rem;
+  color: var(--color-dark);
   font-weight: 700;
-  text-decoration:none;
+  text-decoration: none;
   vertical-align: middle;
 }
 
 .container.plans a span {
-  width:2rem;
-  height:2.4rem;
-  display:inline-block;
+  width: 2rem;
+  height: 2.4rem;
+  display: inline-block;
   background-image: url("./assets/icons/arrow-right.svg");
   vertical-align: middle;
 }
 
+footer .container {
+  display: flex;
+  background-color: var(--color-primary);
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+footer ul {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: var(--color-light-10);
+  font-weight: 400;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: var(--color-light);
+}
+
+@media (min-width: 930px) {
+  .container.benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container.benefits .section {
+    width: 350px;
+    justify-content: center;
+  }
+}
